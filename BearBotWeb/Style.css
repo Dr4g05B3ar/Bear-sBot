@@ -1,0 +1,50 @@
+
+body {
+	background-color: #000; /* Black background */
+}
+
+main {
+	color: #ffffff; /* White text */
+}
+
+    /* Existing styles remain unchanged */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #800080; /* Purple header */
+        color: white;
+        padding: 10px 0; /* Adjusted padding */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+   .links {
+        display: flex;
+        gap: 10px; /* Space between links */
+        justify-content: center;
+    }
+
+   .links a {
+        color: #ffffff; /* White links */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+   .links a:hover {
+        color: #ff6347; /* Reddish-orange on hover */
+        text-decoration: underline;
+    }
+
+    /* Media query adjustments for smaller screens */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: center;
+        }
+       .links {
+            flex-direction: column;
+            gap: 5px; /* Adjust spacing for smaller screens */
+        }
+    }
